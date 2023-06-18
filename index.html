@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Jogo da forca</h1>
+    <button id="botaoJogaDiv" class="botao-jogar" onclick="joga()">Jogar</button>
+
+    <div id="apresentaDiv" aria-live="assertive"></div>
+    <div id="jogandoDiv" style="display: none;">
+        <label class="tamanhoLetra" for="digitaINPT">Letra</label>
+        <input type="text" id="digitaINPT">
+        <div id="palavraDiv" aria-live="assertive"></div>
+        <canvas id="bonequinho" width="600" height="600"></canvas>
+    </div>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</body>
+
+</html>
